@@ -25,7 +25,7 @@ INSERT INTO series (title,author_id,subgenre_id) VALUES
 ("Gandalf the White", "No, it's not a racial thing","Wizard",1,1),
 ("Aslan","Great ruler","Lion",2,2),
 ("Lucy","Youngest","Martian",2,2),
-("Edmund","Foolish","Human",2,2),
+("Edmund","Foolish","Martian",2,2),
 ("Susan","Queen","Human",2,2);
 
  INSERT INTO character_books(character_id, book_id) VALUES
