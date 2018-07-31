@@ -24,7 +24,7 @@ INSERT INTO series (title,author_id,subgenre_id) VALUES
 ("Samwise Gamge", "Frodo is the coolest.", "Hobbit",1,1),
 ("Gandalf the White", "No, it's not a racial thing","Wizard",1,1),
 ("Aslan","Great ruler","Lion",2,2),
-("Lucy","Youngest","Human",2,2),
+("Lucy","Youngest","Martian",2,2),
 ("Edmund","Foolish","Human",2,2),
 ("Susan","Queen","Human",2,2);
 
