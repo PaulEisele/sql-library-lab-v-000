@@ -1,23 +1,47 @@
-INSERT INTO series (id, title, author_id, subgenre_id) VALUES 
-(1, "A Song of Ice and Fire", 1, 1), (2, "Second Series", 2, 2);
+INSERT INTO series (title,author_id,subgenre_id) VALUES
+("Lord of the Rings",1,1),
+("Fjord of the Blings",2,1);
 
-INSERT INTO subgenres (id, name) VALUES 
-(1, "medieval"), (2, "space opera");
+ INSERT INTO subgenres(name) VALUES
+("Classical Fantasy"),
+("Norwegian Fantasy Parody");
 
-INSERT INTO authors (id, name) VALUES 
-(1, "George R. R. Martin"), (2, "Second Author");
+ INSERT INTO authors(name) VALUES
+("J.R.R. Tolkien"),
+("M.L.L. Fjurstenborg");
 
-INSERT INTO books (id, title, year, series_id) VALUES 
-(1, "Game of Thrones", 1996, 1), (2, "A Clash of Kings", 1998, 1), (3, "A Storm of Swords", 2000, 1), (4, "First Book", 2002, 2), (5, "Second Book", 2003, 2), (6, "Third Book", 2005, 2);
+ INSERT INTO books(title, year, series_id) VALUES
+("The Fellowship of the Ring",1942,1),
+("The Two Towers",1944,1),
+("The Return of the King",1946,1),
+("Der Splurgen dur the Frung",1965,2),
+("Illiemsturgen!", 1966,2),
+("The Phantom Menace",1967,2);
 
-INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES 
-(1, "Lady", "Woof Woof", "direwolf", 1, 1), (2, "Tyrion Lannister", "A Lannister always pays his debts", "human", 1, 1), (3, "Daenerys Targaryen", "If I look back I am lost", "human", 1, 1), (4, "Eddard Stark", "Winter is coming", "human", 1, 1);
+ INSERT INTO characters(name, motto,species, author_id,series_id) VALUES
+("Frodo Baggins", "Why Me?","Hobbit",1,1),
+("Bilbo Baggins", "What ring? Never saw it.","Hobbit",1,1),
+("Samwise Gamge", "Frodo is the coolest.", "Hobbit",1,1),
+("Gandalf the White", "No, it's not a racial thing","Wizard",1,1),
+("Gjorden","Why do I exist?","Norwegian",2,2),
+("Helga","The fjords in the springtime are beautiful.","Norwegian",2,2),
+("Murray","GRONK!? GRONK.","Giant",2,2),
+("Jar-jar","Why do I exist?","Gungan",2,2);
 
-INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES 
-(5, "Character One", "motto one", "cylon", 2, 2), (6, "Character Two", "motto two", "human", 2, 2), (7, "Character Three", "motto three", "cylon", 2, 2), (8, "Character Four", "motto four", "cylon", 2, 2);
-
-INSERT INTO character_books (id, book_id, character_id) VALUES 
-(1, 1, 1), (2, 1, 2), (3, 2, 2), (4, 3, 2), (5, 1, 3), (6, 2, 3), (7, 3, 3), (8, 1, 4);
-
-INSERT INTO character_books (id, book_id, character_id) VALUES 
-(9, 4, 5), (10, 4, 6), (11, 5, 6), (12, 6, 6), (13, 4, 7), (14, 5, 7), (15, 6, 7), (16, 4, 8);
+ INSERT INTO character_books(character_id, book_id) VALUES
+(1,1),
+(2,1),
+(3,1),
+(4,1),
+(1,2),
+(2,2),
+(1,3),
+(2,3),
+(5,5),
+(6,5),
+(5,6),
+(6,6),
+(5,6),
+(6,4),
+(7,6),
+(8,6);
