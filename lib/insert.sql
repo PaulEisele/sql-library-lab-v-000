@@ -26,7 +26,7 @@ INSERT INTO series (title,author_id,subgenre_id) VALUES
 ("Aslan","Great ruler","Lion",2,2),
 ("Lucy","Youngest","Martian",2,2),
 ("Edmund","Foolish","Martian",2,2),
-("Susan","Queen","Human",2,2);
+("Susan","Queen","Martian",2,2);
 
  INSERT INTO character_books(character_id, book_id) VALUES
 (1,1),
